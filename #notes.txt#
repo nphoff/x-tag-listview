@@ -1,0 +1,26 @@
+July 9th, 2012
+
+Kumar came in to help us out.
+
+working with Arjan and Dylan to try to figure out how things are working together.
+
+So far:
+
+It looks like each x-tags thing is an element, with the associated methods.
+thus this.ClassName will return the defined class name
+
+document is page-wide.
+
+Googling stuff: do MDN 'whatever you're actually looking for'
+     because MDN isn't very searchable --Kumar
+
+addEventListener with ('click' and function(e))
+         -- function(e) is the standard way of passing information in about the event.
+         -- e.target specifies where the event occured.
+
+dl is the bigger dictionary, dd is the value stored at key dt.
+
+innerHTML is a method that allows you to access and change the HTML of the element object it's attached to.
+
+The "Panel" element in locally run demo.html does not work in Chrome (version 20.0.1132.47), but does work in Firefox.  Why?
+--It's most likely Chrome denying cross-domain requests (since we're running it locally, while the src is on a server elsewhere).
