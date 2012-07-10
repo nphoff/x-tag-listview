@@ -25,4 +25,11 @@ innerHTML is a method that allows you to access and change the HTML of the eleme
 The "Panel" element in locally run demo.html does not work in Chrome (version 20.0.1132.47), but does work in Firefox.  Why?
 --It's most likely Chrome denying cross-domain requests (since we're running it locally, while the src is on a server elsewhere).
 
-"Autosuggest" doesn't work in test.html
+
+So for June 10th, 2012
+
+--decided to make a blog post or doc about creating an xtag for noobies.  Because we've got that.
+
+Start with installation instructions:
+
+git clone --recursive https://github.com/mozilla/x-tag

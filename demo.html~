@@ -24,6 +24,7 @@
 		<link rel="stylesheet" type="text/css" href="elements/pager/pager.css"/>
 		<link rel="stylesheet" type="text/css" href="elements/flipbox/flipbox.css"/>
 		<link rel="stylesheet" type="text/css" href="elements/overlay/overlay.css"/>
+		<link rel="stylesheet" type="text/css" href="elements/listview/listview.css"/>
 		
 		<script type="text/javascript" src="x-tag.js"></script>
 		<script type="text/javascript" src="elements/actionbar/actionbar.js"></script>
@@ -37,6 +38,7 @@
 		<script type="text/javascript" src="elements/pager/pager.js"></script>
 		<script type="text/javascript" src="elements/flipbox/flipbox.js"></script>
 		<script type="text/javascript" src="elements/overlay/overlay.js"></script>
+		<script type="text/javascript" src="elements/listview/listview.js"></script>
 	</head>
 
 <body>
@@ -71,11 +73,12 @@
 			</p>
 			
 			<nav class="actions">
-				<button data-action-type="addSrc">Add <code>src</code> to Panel, lots of unnecessary additional text.</button>
+				<button data-action-type="addSrc">Add <code>src</code> to Panel</button>
 				<button data-action-type="switchSrc">Switch <code>src</code></button>
 			</nav>
 			
 			<x-panel id="panel_demo" rel="demo/html/panel-content.html"></x-panel>
+
 			
 <h4>The Markup:</h4>		
 <pre>
@@ -291,6 +294,22 @@
 </code>
 </pre>	
 		</dd>
+		<dt>Listview</dt>
+		<dd id="listview">
+		  <p class="description">
+		    The <code>listview</code> element can be used to create scrollable lists.
+		  </p>
+<h4>The Markup:</h4>
+<pre>
+<code>
+<x-listview>
+  <ul>
+    <li><a href="/item1">Item 1</a></li>
+    <li><a href="/item2">Item 2</a></li>
+  </ul>
+</x-listview>
+</code>
+</pre>
 	</dl>
 	
 	<h3>
