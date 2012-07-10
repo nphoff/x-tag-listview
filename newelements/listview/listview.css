@@ -1,0 +1,6 @@
+x-listview {
+	   display: block;
+	   max-height: 500px;
+	   background: #fffeee;
+	   overflow: scroll;
+}	 
