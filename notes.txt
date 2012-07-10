@@ -33,3 +33,25 @@ So for June 10th, 2012
 Start with installation instructions:
 
 git clone --recursive https://github.com/mozilla/x-tag
+
+Super simple .js file -- defines essentially no behaviour, but reserves the word 'x-listview'
+
+xtag.register('x-listview', {})
+
+css to accomodate the scrollable behaviour:
+
+Important css bits:
+
+	  -- overflow: auto;
+	  -- height: 100%;
+	  -- width: 100%
+
+Need to use the <p> tag or other specifier to get the menu item to take full width
+(as opposed to plain text)
+
+.gitignore:
+	You can put anything in there as regex (* representing any character)
+	Need to remember to escape hash characters (#) because they represent comments.
+
+Remember how important India and Canada are in the development of lists.
+	 -- DO NOT TAKE THOSE OUT OF THE DEMO.

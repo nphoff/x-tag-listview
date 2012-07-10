@@ -13,9 +13,10 @@
 			var href = this.getAttribute('href');
 			var a = document.createElement('a');
 			this.style.cursor = 'pointer';
-			a.setAttribute('href', href);
+		        a.setAttribute('href', href);
 			a.style.display='none';
 			this.appendChild(a);
+		        this.innerHTML = '<p>' + this.innerHTML + '</p>';
 		}
 	});
 })();
