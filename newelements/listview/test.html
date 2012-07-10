@@ -6,14 +6,20 @@
 		
 		<title>X-Tag - Tabbox Test</title>
 		
-		<!--<link rel="stylesheet" type="text/css" href="../../demo/css/reset.css" />-->
+		<link rel="stylesheet" type="text/css" href="../../demo/css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="listview.css" />
+		<link rel="stylesheet" type="text/css" href="../listitem/listitem.css" />
 		<script type="text/javascript" src="../../x-tag.js"></script>
+		<script type="text/javascript" src="../listitem/listitem.js"></script>
 		<script type="text/javascript" src="listview.js"></script>
 		
 		<style>
 			#listview-frame {
 			        width: 500px;
+			        height: 200px;
+			}
+			#listview {
+			        background: #eeeeee;
 			}
 		</style>
 	</head>
@@ -21,11 +27,15 @@
 <body>
   <p class="description">
     The <code>listview</code> element can be used to create scrollable lists.
+    <ul>
+      <li>Hello</li>
+      <li>Hello, again!</li>
+    </ul>
   </p>
   <div id="listview-frame">
-	<x-listview>
+	<x-listview id="listview">
 		<ul>
-		  <li><a href="/item1">Item 1</a></li>
+		  <x-li href="/item1"><p>Item 1</p></x-li>
 		  <li><a href="/item2">Item 2</a></li>
 		  <li><a href="/item2">Item 2</a></li>
 		  <li><a href="/item2">Item 2</a></li>
