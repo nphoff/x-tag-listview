@@ -7,7 +7,7 @@
 	};
 	xtag.register('x-li', {
 		events: {
-		    'touchstart': openLink
+		    'mousedown': openLink
 		},
 		
 	        methods: {
