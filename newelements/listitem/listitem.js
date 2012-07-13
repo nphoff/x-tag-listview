@@ -9,6 +9,12 @@
 		events: {
 			'click': openLink
 		},
+		
+	        methods: {
+		    selectListElement: function(){
+			this.style.background-color="yellow";
+		    }
+		},
 		onCreate : function(){
 			var href = this.getAttribute('href');
 			var a = document.createElement('a');
@@ -18,5 +24,6 @@
 			this.appendChild(a);
 		        this.style.display = 'block';
 		}
-	});
+	    
+	    });
 })();
