@@ -17,6 +17,13 @@ x-listview x-li {
 	   border-width: 1px;
 }
 
+x-listview x-li:hover{
+           background: #fffbbb;
+}
+
+x-listview x-li:active{
+           background: black;
+}
 @media (max-width: 480px) {
 
 x-listview {
