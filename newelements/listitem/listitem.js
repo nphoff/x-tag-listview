@@ -5,9 +5,22 @@
 	var openLink = function (e) {
 		window.location = this.getAttribute('href');	
 	};
+        var g_yPosBegin;
+        var yPositionBeginClick = function(e){
+	    g_yPosBegin = e.screenY;
+	};
+        var yPositionEndClick = function(e){
+	    var offset = 30;
+	    var biggerthan = (g_yPosBegin <= e.screenY + offset);
+	    var lessthan = (g_yPosBegin >= e.screenY - offset);
+	    if(biggerthan || lessthan ){
+		openLink;
+	    }
+	};
 	xtag.register('x-li', {
 		events: {
-		    'mousedown': openLink
+		    'mousedown': yPositionBeginClick,
+		    'mouseup': yPositionEndClick
 		},
 		
 		onCreate : function(){
