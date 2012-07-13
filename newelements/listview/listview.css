@@ -14,18 +14,20 @@ x-listview x-li {
 	   border-color: silver;
 	   border-bottom-style: solid;
 	   border-width: 1px;
-	   -webkit-transition-property: background; 
-	   -webkit-transition-duration: 1s;
+	   /* -webkit-transition-property: background;  */
+	   /* -webkit-transition-duration: 1s; */
+	   /* -moz-transition-property: background; */
+	   /* -moz-transition-duration: 1s;  */
 }
 
 
-x-listview x-li:hover{
-           background: darkgrey;
-}
+/* x-listview x-li:hover{ */
+/*            background: darkgrey; */
+/* } */
 
-x-listview x-li:active{
-           background: #FF0066;
-}
+/* x-listview x-li:active{ */
+/*            background: #FF0066; */
+/* } */
 
 
 @media (max-width: 480px) {
