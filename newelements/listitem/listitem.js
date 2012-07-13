@@ -7,7 +7,7 @@
 	};
 	xtag.register('x-li', {
 		events: {
-			'tap': openLink
+			'click': openLink
 		},
 		onCreate : function(){
 			var href = this.getAttribute('href');
@@ -16,7 +16,7 @@
 		        a.setAttribute('href', href);
 			a.style.display='none';
 			this.appendChild(a);
-		        this.innerHTML = '<p>' + this.innerHTML + '</p>';
+		        this.style.display = 'block';
 		}
 	});
 })();
