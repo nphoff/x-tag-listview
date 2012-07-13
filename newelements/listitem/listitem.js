@@ -16,10 +16,7 @@
 	    var lessthan = (g_yPosBegin >= e.screenY - offset);
 	    if(biggerthan && lessthan ){ 
 		openLink(e,that);
-		console.log(biggerthan);
-		console.log(lessthan);
 	    }
-	    /*openLink(e,that);*/
 	};
 	xtag.register('x-li', {
 		events: {
