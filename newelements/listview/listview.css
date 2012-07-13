@@ -36,8 +36,9 @@ x-listview {
 	   display: block;
 	   height: 100%;
 	   width: 100%;
-	   overflow: auto;
 	   background: #fffeee;
+	   overflow: auto;
+	   -webkit-overflow-scrolling: touch;
 }
 
 x-listview x-li {
