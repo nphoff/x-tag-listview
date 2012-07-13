@@ -4,8 +4,7 @@ x-listview {
 	   width: 100%;
 	   overflow: auto;
 	   background: #fffeee;
-	   -webkit-tap-highlight-color:rgba(0,255,0,0);
-	   -webkit-click-highlight-color:rgba(0,255,0,0);
+	   
 }
 
 x-listview x-li {
@@ -15,19 +14,19 @@ x-listview x-li {
 	   border-color: silver;
 	   border-bottom-style: solid;
 	   border-width: 1px;
+	   -webkit-transition-property: background; 
+	   -webkit-transition-duration: 1s;
 }
 
-/* x-listview x-li:hover{ */
-/*            background: #fffbbb; */
-/* } */
 
-/* x-listview x-li:active{ */
-/*            background: black; */
-/* } */
-
-x-listview x-li:focus{
-           background: pink;
+x-listview x-li:hover{
+           background: darkgrey;
 }
+
+x-listview x-li:active{
+           background: #FF0066;
+}
+
 
 @media (max-width: 480px) {
 
