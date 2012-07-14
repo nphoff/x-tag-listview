@@ -52,11 +52,8 @@ span[feature="data-bound"] {
 /* LISTVIEW DEMO */
 
 #listview_demo {
-	/*height: 200px;
-	width: 300px;*/
-	padding: 0 20px;
-	background: #fffeee;
-	overflow: auto;
+	height: 200px;
+	width: 300px;
 }
 
 /* TABBOX DEMO */

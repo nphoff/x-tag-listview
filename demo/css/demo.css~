@@ -49,6 +49,15 @@ span[feature="data-bound"] {
 	background-color: #58F48C;
 }
 
+/* LISTVIEW DEMO */
+
+#listview_demo {
+	/*height: 200px;
+	width: 300px;*/
+	padding: 0 20px;
+	background: #fffeee;
+	overflow: auto;
+}
 
 /* TABBOX DEMO */
 

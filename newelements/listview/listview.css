@@ -3,17 +3,22 @@ x-listview {
 	   height: 100%;
 	   width: 100%;
 	   overflow: auto;
-	   background: #fffeee;
-	   
+	   background: lightgrey;	   
 }
 
-x-listview x-li {
-	   padding: 5px;
+x-listview li {
 	   font-family: Helvetica;
 	   font-size: 16px;
 	   border-color: silver;
 	   border-bottom-style: solid;
 	   border-width: 1px;
+}
+
+x-listview li a {
+           display: block;
+           text-decoration: none;
+           color: black;
+           padding: 5px;
 }
 
 @media (max-width: 480px) {
@@ -22,12 +27,12 @@ x-listview {
 	   display: block;
 	   height: 100%;
 	   width: 100%;
-	   background: #fffeee;
+	   background: lightgrey;
 	   overflow: auto;
 	   -webkit-overflow-scrolling: touch;
 }
 
-x-listview x-li {
+x-listview li {
 	   padding: 5px;
 	   font-family: Helvetica;
 	   font-size: 38px;
