@@ -1,44 +1,35 @@
 x-listview {
-	   display: block;
-	   height: 100%;
-	   width: 100%;
-	   overflow: auto;
-	   background: lightgrey;	   
+           display: block;
+           height: 100%;
+           width: 100%;
+           overflow: auto;
 }
 
 x-listview li {
-	   font-family: Helvetica;
-	   font-size: 16px;
-	   border-color: silver;
-	   border-bottom-style: solid;
-	   border-width: 1px;
+           border-bottom-style: solid;
+           border-width: 1px;
 }
 
-x-listview li a {
+x-listview li * {
            display: block;
            text-decoration: none;
-           color: black;
            padding: 5px;
 }
 
 @media (max-width: 480px) {
 
-x-listview {
-	   display: block;
-	   height: 100%;
-	   width: 100%;
-	   background: lightgrey;
-	   overflow: auto;
-	   -webkit-overflow-scrolling: touch;
-}
+       x-listview {
+                  display: block;
+	          height: 100%;
+	          width: 100%;
+	          overflow: auto;
+	          -webkit-overflow-scrolling: touch;
+       }
 
-x-listview li {
-	   padding: 5px;
-	   font-family: Helvetica;
-	   font-size: 38px;
-	   border-color: silver;
-	   border-bottom-style: solid;
-	   border-width: 1px;
-}
+       x-listview li {
+	          padding: 5px;
+	          border-bottom-style: solid;
+	          border-width: 1px;
+       }
 
 }
